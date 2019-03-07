@@ -18,7 +18,7 @@
   font-size: 24px;
   padding-bottom: 20px;
   border-bottom: 1px solid #cccccc;
-  margin: 20px 0 20px 0;
+  margin: 10px 0 20px 0;
   color: #4aaaa5;
 }
 
@@ -54,12 +54,14 @@
 
 #background{
   background-image: url("../images/gplaypattern.png");
-  padding-top: 25px;
+  padding-top: 15px;
   border-top: 1px solid #cccccc;
-  
-
+  flex: 1 0 auto;
 }
 
+header{
+  flex-shrink: 0;
+}
 .container {
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   color: #777777;
@@ -67,7 +69,6 @@
   width: 960px;
   margin: 0 auto;
   overflow: hidden;
-  /*flex: 1 0 auto;*/
 }
 
 #contentMargin{
@@ -82,15 +83,13 @@
 
 #profileImage{
   float: left;    
-  margin: 0 15px 20px 0;
+  margin: 0 35px 10px 0;
   overflow: hidden;
 }
 
 #text{
-  float: right;
-  text-align: left;
-  width: 675px;
-  margin-top: 0;
+line-height: 1.5;
+margin-right: 10px;
 
 }
 
@@ -162,32 +161,17 @@ input[type=submit]:hover {
 	text-align:center;
   color:#999999;
   background-color: #666666;
-  margin: 70px 0 0 0;
   border-top: 8px solid #4aaaa5;
-  /*flex-shrink: 0;*/
   padding: 10px;
+  flex-shrink: 0;
 }
 
+body{
+  display: flex;
+  flex-direction: column;
+}
 
 html, body {
   height: 100%;
   margin: 0;
 }
-.content {
-  padding: 20px;
-  min-height: 100%;
-  margin: 0 auto -50px;
-}
-
-.push {
-  height: 50px;
-}
-
-/*html {
-  height: 100%;
-}
-body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}*/
